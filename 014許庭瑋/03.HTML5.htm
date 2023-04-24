@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/aka.css">
+    <style>
+        body {
+            background: gray;
+        }
+
+        h1 {
+            color: blue;
+
+        }
+
+        p {
+            font-size: 24px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>CSS</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, provident.</p>
+    <p>我去讓她數碼相機擔任男子理論後來含有最低個性，證件金融就像導演，長度醫生收入提高美女得分檢驗予以至今完美人間，<br>全文並不接口文本採取劇情自行同時三大，
+        軟體阿摩斯犯罪我不走勢一天上帝這一點，經理則是開心站內玻璃產品報價貼圖無聊重複各種，驚訝策劃鈴聲下載現有命。</p>
+    <button id="btn">顯示現在的世間</button>
+    <div id="showtime"></div>
+
+    <script>
+        const btn = document.getElementById('btn')
+        const showtime = document.getElementById('showtime')
+
+        btn.onclick = function () {
+            setInterval(() => {
+                showtime.innerText = new Date().toLocaleTimeString()
+            }, 1000)
+        }
+    </script>
+</body>
+
+</html>
